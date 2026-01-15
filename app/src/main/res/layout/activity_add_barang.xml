@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBarangActivity">
+
+    <TextView
+        android:id="@+id/tambahBarangHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data Barang"
+        android:textSize="24sp"
+        android:textColor="#E91E63"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/namaEditText"
+        android:layout_below="@id/tambahBarangHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Barang"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/kategoriEditText"
+        android:layout_below="@id/namaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kategori Barang"
+        android:padding="10dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/hargaEditText"
+        android:layout_below="@id/kategoriEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Harga Barang"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/stokEditText"
+        android:layout_below="@id/hargaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Stok Barang"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_below="@id/stokEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan Data"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#E91E63"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
